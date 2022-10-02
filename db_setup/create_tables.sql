@@ -1,4 +1,4 @@
-CONNECT sds_learner/sds_learner@10.0.0.69:1521/XEPDB1;
+CONNECT sportdatasci/sportdatasci@10.0.0.69:1521/XEPDB1;
 
 -- Use an anonymous PL/SQL script to
 -- drop all tables in the current schema, defined above by the CONNECT statement
