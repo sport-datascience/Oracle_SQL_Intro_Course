@@ -1,8 +1,8 @@
 prompt>Dropping users
-DROP USER sds_learner CASCADE;
+DROP USER sportdatasci CASCADE;
 
 prompt>Creating users
-CREATE USER sds_learner IDENTIFIED BY sds_learner DEFAULT TABLESPACE users;
+CREATE USER sportdatasci IDENTIFIED BY sportdatasci DEFAULT TABLESPACE users;
 
 prompt>Granting privileges
-GRANT ALL PRIVILEGES TO sds_learner;
+GRANT ALL PRIVILEGES TO sportdatasci;
