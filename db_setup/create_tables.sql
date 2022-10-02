@@ -115,7 +115,7 @@ CREATE TABLE dim_venue
 
 CREATE TABLE fact_goalie 
 ( 
-  game_id                           VARCHAR2(10)	    NOT NULL,
+  game_id                           VARCHAR2(10)      NOT NULL,
   player_id                         VARCHAR2(7)       NOT NULL,
   player_name                       VARCHAR2(128),
   primary_position_code             VARCHAR2(1),
