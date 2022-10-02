@@ -25,7 +25,13 @@ prompt>Loading Fact Goalie
 start insert_fact_goalie
 
 prompt>Loading Fact Player
-start insert_fact_player
+start insert_fact_player_1
+start insert_fact_player_2
+start insert_fact_player_3
+start insert_fact_player_4
+start insert_fact_player_5
+start insert_fact_player_6
+start insert_fact_player_7
 
 prompy>Loading Fact Schedule
 start insert_fact_schedule
