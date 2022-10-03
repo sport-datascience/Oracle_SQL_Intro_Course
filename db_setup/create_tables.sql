@@ -115,8 +115,8 @@ CREATE TABLE dim_venue
 
 CREATE TABLE fact_goalie 
 ( 
-  game_id                           VARCHAR2(10)      NOT NULL,
-  player_id                         VARCHAR2(7)       NOT NULL,
+  game_id                           VARCHAR2(10)	    NOT NULL,
+  player_id                         VARCHAR2(7)       	NOT NULL,
   player_name                       VARCHAR2(128),
   primary_position_code             VARCHAR2(1),
   team_id                           VARCHAR2(2),
@@ -139,7 +139,7 @@ CREATE TABLE fact_goalie
   CONSTRAINT fact_goalie_pk
     PRIMARY KEY (game_id, player_id),
   CONSTRAINT fact_goalie_fk_player FOREIGN KEY (player_id)
-    REFERENCES sds_learner.dim_player (player_id)
+    REFERENCES dim_player (player_id)
 );
 
 CREATE TABLE fact_player 
@@ -172,7 +172,7 @@ CREATE TABLE fact_player
   CONSTRAINT fact_player_pk
     PRIMARY KEY (game_id, player_id),
   CONSTRAINT fact_player_fk_player FOREIGN KEY (player_id)
-    REFERENCES sds_learner.dim_player (player_id)
+    REFERENCES dim_player (player_id)
 );
 
 CREATE TABLE fact_schedule 
@@ -202,5 +202,5 @@ CREATE TABLE fact_schedule
   CONSTRAINT game_pk
     PRIMARY KEY (game_pk),
   CONSTRAINT fact_schedule_fk_season FOREIGN KEY (season)
-    REFERENCES sds_learner.dim_season (season_id)
+    REFERENCES dim_season (season_id)
 );
