@@ -3,7 +3,7 @@ spool setup_database.log;
 prompt>Creating users/schemas
 start create_users
 
-prompt>Creating AP tables
+prompt>Creating tables
 start create_tables
 
 prompt>Loading Dim Game Type
