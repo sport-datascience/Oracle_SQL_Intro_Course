@@ -1,0 +1,5 @@
+--Oracle Express Edition
+https://www.oracle.com/technology/software/products/database
+
+--Oracle SQL Developer
+https://www.oracle.com/technology/software/products/sql
